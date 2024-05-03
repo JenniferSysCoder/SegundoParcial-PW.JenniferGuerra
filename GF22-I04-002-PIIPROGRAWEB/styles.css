@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+header, section, article, nav, footer, aside, figure, form{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cajacabecera{
+    width: 100%;
+    background: linear-gradient(90deg, #360606 -8.75%, rgb(167, 13, 13) 100%), #ff0000; /*DEGRADADO ROJO*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+p, h1, h2,h3, h4{
+    font-family: 'Poppins', sans-serif, Times New Roman; /*TIPO DE LETRA POPPINS*/
+    margin: 6px;
+}
+
+/*Agregué un efecto hover al nombre en el footer*/
+#piepagina p:hover {
+    color: black; 
+}
+
+h1{font-size: 24px;}
+h3{font-size: 18px;}
+h4{font-size: 16px;}
+p{font-size: 15px;}
+
+a{
+    text-decoration: none;
+}
+a img{
+    border: none,
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    background-image: linear-gradient(90deg, #360606 40%, rgb(167, 13, 13) 50%, #ff0000 60%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+#cabecera{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+}
+#logo{
+   padding: 5px;
+   
+}
+#logo img{
+   width: 237px;
+   height: auto;
+   margin-left: 0.1%;
+}
+/* -------------------MENÚ------------------------ */
+
+.menu{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    margin-left: 30px;
+}
+#btn-menu{
+    display: none;
+}
+#mmovil{
+    font-size: 45px;
+    cursor: pointer;
+    text-align: right;
+    color: #ffffff;
+    display: none;
+    
+}
+.menu ul{
+    display: flex;
+    flex-wrap: row;
+    padding: 20px;
+    list-style: none;
+    align-items: baseline;
+}
+.menu li {
+    list-style-type: none;
+    margin-left: 70px;
+  }
+  
+.menu a{
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 50px;
+  margin-left: 10px;
+  font-weight: 500px;
+  transition: color 0.3s ease;
+}
+.menu a i{
+    font-size: 35px;
+    padding: 10px;
+    align-items: baseline;
+}
+
+.menu a:hover{
+    color: black;
+    background-color: #FFD43B;
+}
+.banner{
+    margin-top: 80px;
+    background-image: url("img/13380024_5215212.jpg"); /*Background imagen*/
+    width: 100%;
+    object-fit: cover;
+    height: 1004px; /*HEIGHT 1004px*/
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.inicio{
+    background-color: #E9E9E9;
+    height: 920px; /*920 px*/
+    padding-left: 50px;
+    position: relative;
+    padding-top: 100px;
+}
+.calendario{
+    background: #fff url("img/fondo-ciudad.png") no-repeat bottom;
+    height: 920px; /*920 px*/
+    position: relative;
+    padding-top: 100px;
+}
+.articulos{
+    background-color: #E9E9E9;
+    height: 920px; /*920 px*/
+    position: relative;
+    padding-top: 100px;
+}
+.mas{
+    background: #fff url("img/fondo-ciudad.png") no-repeat bottom;
+    height: 920px; /*920 px*/
+    position: relative;
+    padding-top: 100px;
+}
+
+.tren{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 929px;
+    position:absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+
+/*----PIE DE PAGINA---- */
+#piepagina{
+    background: #a80303;
+    padding: 2% 0;
+}
+.cajapie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+    justify-items: baseline;
+
+}
+#piepagina p{
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 40px;
+    
+}
+#piepagina ul{
+    width: 160px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin-left: 5%;
+    position: absolute;
+    right: 30%;
+
+}
+#piepagina ul li{
+    padding: 10px 30px;
+}
+#piepagina ul li a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    color: #000000;
+    font-size: 50px;
+}
